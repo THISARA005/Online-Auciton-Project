@@ -1,0 +1,121 @@
+
+
+.slider-con{
+  width: 100%;
+  height: 600px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.slider-con .img-slide{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+}
+.img-btn{
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.418);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  z-index: 2;
+}
+.img-btn button{
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 20px;
+}
+
+
+.slider-con .slider-layer{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.slider-con .brand-heading{
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.slider-con .brand-heading h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+.slider-con .brand-heading p{
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+
+
+
+
+
+.news-upcoming{
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-upcoming .news-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-upcoming .news-heading h3 span{
+  position: relative;
+  padding: 0 1rem ;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {color:red; }
+  25%  {color:yellow; }
+  50%  {color:blue; }
+  75%  {color:green;}
+  100% {color:red; }
+}
+.news-upcoming .news-heading button{
+  border: none;
+  padding: .3rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  border-radius: 50px;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes example2 {
+  0%   {transform: scale(1.2);}
+  25%  {transform: scale(1); }
+  50%  {transform: scale(1.2); }
+  75%  {transform: scale(1);}
+  100% {transform: scale(1.2);}
+}

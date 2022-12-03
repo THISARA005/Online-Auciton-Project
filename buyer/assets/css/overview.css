@@ -1,0 +1,160 @@
+.overview{
+    padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.overview .stat{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 3rem;
+}
+.overview .stat .stat-anim{
+    margin: 0 1rem;
+    width: 140px;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+}
+.overview .stat .stat-anim .stat-data{
+    width: 100%;
+    height: 100%;
+    padding: .3rem;
+    background-color: var(--color-grey1);
+    transform: translate(10px , 0px);
+    border-radius: 0 10px 10px 0;
+}
+
+.overview .stat .stat-anim .stat-data .nam{
+    display: block;
+    font-size: .9rem;
+    padding: .3rem;
+
+}
+.overview .stat .stat-anim .stat-data .val{
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    padding: .3rem;
+}
+
+/* ///////////////////////// */
+.overview .chart{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.overview .chart table{
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.overview .chart table tbody{
+    border: none;
+}
+.overview .chart table tbody tr {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.overview .chart table tbody tr:last-child {
+    border-bottom: none;
+}
+.overview .chart table tbody tr:last-child td {
+    border-bottom: none;
+}
+.overview .chart table tbody tr th {
+    border-top: none;
+}
+.overview .chart table tbody tr th:first-child {
+    border-left: none;
+}
+.overview .chart table tbody tr th:last-child {
+    border-right: none;
+}
+.overview .chart table tbody tr td {
+    border-top: none;
+}
+.overview .chart table tbody tr td:first-child {
+    border-left: none;
+}
+.overview .chart table tbody tr td:last-child {
+    border-right: none;
+}
+
+.overview .chart tr, tr, th, td{
+    border: 2px solid var(--color-secondary);
+    border-collapse: collapse;
+    padding: 10px;
+    color: var(--color-grey3);
+}
+
+
+/* /////////////////////////// */
+.overview .pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem 0 1rem;
+}
+.overview .pagination .btn-format{
+    width: 100px;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.overview .pagination .btn-format a{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    color: var(--color-white);
+    padding: 1rem;
+    font-size: .9rem;
+}
+.overview .pagination .btn-format i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-white);
+    padding : 0 1rem;
+}
+.overview .pagination .l-arow-pos{
+border-radius: 0 50px 50px 0;
+}
+.overview .pagination .r-arow-pos{
+    border-radius: 50px 0px 0px 50px;
+    }
+
+.overview .pagination .l-arow-pos i{
+    left: 0;
+}
+.overview .pagination .r-arow-pos i{
+    right: 0;
+}
+
+/* Pagination Nmbr */
+.overview .pagination ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.overview .pagination ul li a{
+    padding: .3rem .5rem;
+    margin: 0 .3rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-size: .9rem;
+}
+.overview .active{
+    background-color: var(--color-grey3) !important;
+    color:  var(--color-white) !important;
+}

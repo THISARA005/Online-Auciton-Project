@@ -1,0 +1,106 @@
+.sch-aution{
+    padding: 3rem 4rem;
+    min-height: 600px;
+}
+.sch-aution form{
+    background-color: var(--color-grey1);
+    padding: 3rem 4rem;
+}
+.sch-aution form .group-data{
+    padding: 1rem;
+}
+.sch-aution form .group-data label{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: .7rem;
+}
+.sch-aution form .group-data .control-data{
+    width: 100%;
+    padding: .7rem .5rem;
+    outline: none;
+    border: 1px solid var(--color-grey0);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-size: 1rem;
+}
+.sch-aution form .group-data .control-data::placeholder{
+    color: var(--color-white);
+}
+
+.sch-aution form .group-data .control-data:focus{
+    border-color: var(--color-grey1);
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: var(--color-primary);
+}
+.sch-aution form .group-data textarea{
+    resize: none;
+    width: 100%;
+}
+.sch-aution form .group-data .date{
+    padding: .7rem .5rem;
+    outline: none;
+    border: 1px solid var(--color-grey0);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-size: 1rem;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* ---------------------------- */
+
+.sch-aution form .group-data .key{
+    display: inline-flex;
+}
+.sch-aution form .group-data .key .key1{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .3rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+.sch-aution form .group-data button{
+    display: block;
+    border: none;
+    margin-top: .7rem;
+    padding: .7rem;
+    text-transform: uppercase;
+}
+.sch-aution form .btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.sch-aution form .btn .button{
+    border: none;
+    padding: .7rem;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+
+}
+
+/* ///////////////////// */
+/* Error */
+.success{
+    color:  green;
+    font-size: 1rem;
+    font-weight: lighter;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 128, 0, 0.336);
+    text-align: center;
+}
+.danger{
+    color: red;
+    font-size: 1rem;
+    font-weight: lighter;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(128, 0, 0, 0.336);
+    text-align: center;
+}

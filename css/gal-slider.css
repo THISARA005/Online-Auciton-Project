@@ -1,0 +1,86 @@
+
+.auct-detail .container {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  display: block;
+}
+
+.auct-detail .container .mySlides {
+  width: 100%;
+  height: 500px;
+}
+
+.auct-detail .container .mySlides img {
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.auct-detail .container .cursor {
+  cursor: pointer;
+}
+
+.auct-detail .container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.auct-detail .container .prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.auct-detail .container .prev:hover,
+.auct-detail .container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.auct-detail .container .row {
+  margin: 2rem 0;
+  position: relative;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  height: 150px;
+}
+
+.auct-detail .container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.auct-detail .container .column {
+  vertical-align: middle;
+  flex: 1;
+}
+.auct-detail .container .column img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.auct-detail .container .img-gal {
+  opacity: 0.6;
+}
+
+.auct-detail .container .active,
+.auct-detail .container .img-gal:hover {
+  opacity: 1;
+}
+
+/* Next & previous buttons */
+.auct-detail .container .prev,
+.auct-detail .container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}

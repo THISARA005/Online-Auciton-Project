@@ -1,0 +1,155 @@
+@import './pagination.css';
+
+.overview {
+    padding: 3rem 4rem;
+    display: grid;
+    min-height: 600px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.overview .stat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 3rem;
+}
+
+.overview .stat .stat-anim {
+    margin: 0 1rem;
+    width: 140px;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+}
+
+.overview .stat .stat-anim .stat-data {
+    width: 100%;
+    height: 100%;
+    padding: .3rem;
+    background-color: var(--color-grey1);
+    transform: translate(10px, 0px);
+    border-radius: 0 10px 10px 0;
+}
+
+.overview .stat .stat-anim .stat-data .nam {
+    display: block;
+    font-size: .9rem;
+    padding: .3rem;
+
+}
+
+.overview .stat .stat-anim .stat-data .val {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    padding: .3rem;
+}
+
+.overview hr {
+    width: 70%;
+    height: 5px;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 20px;
+    margin: 2rem auto;
+}
+
+.overview h3 {
+    padding: 1rem 0;
+}
+
+.overview table,
+th,
+td {
+    padding: .7rem;
+    border: 2px solid var(--color-secondary);
+    text-align: left;
+}
+
+.overview table {
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.overview table tbody {
+    border: none;
+}
+
+.overview table tbody tr {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.overview table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.overview table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.overview table tbody tr th {
+    border-top: none;
+}
+
+.overview table tbody tr th:first-child {
+    border-left: none;
+}
+
+.overview table tbody tr th:last-child {
+    border-right: none;
+}
+
+.overview table tbody tr td {
+    border-top: none;
+}
+
+.overview table tbody tr td:first-child {
+    border-left: none;
+}
+
+.overview table tbody tr td:last-child {
+    border-right: none;
+}
+
+.overview tr,
+tr,
+th,
+td {
+    border: 2px solid var(--color-secondary);
+    border-collapse: collapse;
+    padding: 10px;
+    color: var(--color-grey3);
+}
+
+
+/* ///////////////// */
+.unread_bold {
+    font-weight: bold;
+}
+
+.un_read {
+    position: relative;
+    z-index: 10;
+}
+
+.overview .un_read::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    height: 7px;
+    background-color: green;
+    left: 0px;
+    width: 7px;
+    border-radius: 50%;
+    list-style: none;
+}
+/* --------------------------------------- */

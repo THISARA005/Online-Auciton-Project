@@ -1,0 +1,88 @@
+@import './pagination.css';
+
+.buyer_rep{
+    padding: 3rem 4rem;
+}
+
+.buyer_rep h3 {
+    padding-bottom: 2rem;
+}
+
+.buyer_rep hr{
+    width: 70%;
+    height: 5px;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 20px;
+    margin: 2rem auto;
+}
+
+.buyer_rep table,
+th,
+td {
+    padding: .7rem;
+    border: 2px solid var(--color-secondary);
+    text-align: left;
+}
+
+.buyer_rep table {
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.buyer_rep table tbody {
+    border: none;
+}
+
+.buyer_rep table tbody tr {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.buyer_rep table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.buyer_rep table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.buyer_rep table tbody tr th {
+    border-top: none;
+}
+
+.buyer_rep table tbody tr th:first-child {
+    border-left: none;
+}
+
+.buyer_rep table tbody tr th:last-child {
+    border-right: none;
+}
+
+.buyer_rep table tbody tr td {
+    border-top: none;
+}
+
+.buyer_rep table tbody tr td:first-child {
+    border-left: none;
+}
+
+.buyer_rep table tbody tr td:last-child {
+    border-right: none;
+}
+
+.buyer_rep tr,
+tr,
+th,
+td {
+    border: 2px solid var(--color-secondary);
+    border-collapse: collapse;
+    padding: 10px;
+    color: var(--color-grey3);
+}

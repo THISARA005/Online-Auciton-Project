@@ -1,0 +1,36 @@
+.chrt{
+    width: 100%;
+    padding: .7rem 1rem;
+    margin-bottom: 2rem;
+    text-align: right;
+}
+.chrt form div{
+    margin: .3rem 0;
+}
+.chrt form input{
+    padding: .3rem 1rem;
+    outline: none;
+}
+.chrt form label{
+    font-size: 1rem;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.chrt form input[type = date]{
+    background-color: var(--color-grey1);
+    border: none;
+}
+::-webkit-calendar-picker-indicator {
+    filter: none;
+}
+.chrt form input[type = submit]{
+    background-color: var(--color-grey1);
+    border: none;
+    outline: none;    
+    padding: .3rem 1rem;
+}
+.chrt form input[type = submit]:hover{
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+}

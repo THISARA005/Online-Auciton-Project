@@ -1,0 +1,12 @@
+#pagination{
+    width: 20%;
+    margin: 1rem auto;
+}
+#pagination a{
+    padding: .2rem .3rem;
+    margin: 0 .2rem;
+}
+#pagination .active{
+    color: var(--color-white) !important;
+    background-color: var(--color-secondary) !important;
+}

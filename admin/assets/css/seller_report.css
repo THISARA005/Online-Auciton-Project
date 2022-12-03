@@ -1,0 +1,85 @@
+@import './pagination.css';
+
+.seller_rep{
+    padding: 3rem 4rem;
+}
+.seller_rep h3{
+    padding-bottom: 2rem;
+}
+.seller_rep hr{
+    width: 70%;
+    height: 5px;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 20px;
+    margin: 2rem auto;
+}
+.seller_rep table,
+th,
+td {
+    padding: .7rem;
+    border: 2px solid var(--color-secondary);
+    text-align: left;
+}
+
+.seller_rep table {
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.seller_rep table tbody {
+    border: none;
+}
+
+.seller_rep table tbody tr {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.seller_rep table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.seller_rep table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.seller_rep table tbody tr th {
+    border-top: none;
+}
+
+.seller_rep table tbody tr th:first-child {
+    border-left: none;
+}
+
+.seller_rep table tbody tr th:last-child {
+    border-right: none;
+}
+
+.seller_rep table tbody tr td {
+    border-top: none;
+}
+
+.seller_rep table tbody tr td:first-child {
+    border-left: none;
+}
+
+.seller_rep table tbody tr td:last-child {
+    border-right: none;
+}
+
+.seller_rep tr,
+tr,
+th,
+td {
+    border: 2px solid var(--color-secondary);
+    border-collapse: collapse;
+    padding: 10px;
+    color: var(--color-grey3);
+}
