@@ -1,0 +1,137 @@
+
+.header{
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 10px solid var(--color-secondary);
+}
+
+.header .user{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header .user .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+.header .user .avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+}
+.header .user span{
+    font-size: .9rem;
+    padding-top: .3rem;
+    display: block;
+    cursor: pointer;
+}
+.header .user .profile{
+    position: absolute;
+    top: 120%;
+    right: 0;
+    z-index: 9;
+}
+.header .user .profile .pro-drop{
+    display: none;
+    background-color: var(--color-secondary);
+    padding: 1rem 0;
+    width: max-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    transition: .5s all ease-in-out;
+}
+.header .user .profile ul li a{
+    padding: .3rem 1rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    display: block;
+
+}
+.header .user .profile ul li a:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.aside{
+    width: 100%;
+    min-height: 600px;
+    padding: 2rem 0;
+    background-color: var(--color-primary);
+}
+
+.aside ul{
+    display: flex;
+    flex-direction: column;
+}
+.aside ul li{
+    margin: .3rem 0;
+    display: block;
+    width: 100%;
+}
+/* .aside ul li:hover {
+} */
+.aside ul li a{
+    transition: .2s all ease-in;    
+    color: var(--color-primary);
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    display: block;
+}
+.aside ul li a:hover{
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+.active{
+    background-color: var(--color-white) !important;
+    color: var(--color-secondary) !important;
+}
+
+.aside ul li ul li{
+    display: block;
+    width: 100%;
+}
+.aside ul li ul li:first-child{
+    margin: .5rem 0;
+}
+.aside ul li ul li a{
+    transition: .2s all ease-in;    
+    color: var(--color-primary);
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    display: block;
+}
+.aside ul .drop .subdis{
+    display: none;
+}
+
+.aside ul .drop:hover .subdis{
+    display: block;
+    transition: .2s all ease-in;
+}
+
+.aside ul li ul li a:hover{
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}

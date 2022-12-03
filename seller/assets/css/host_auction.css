@@ -1,0 +1,351 @@
+/* Host & Add vehicle & edit vehicle Css*/
+
+.host {
+    padding: 3rem 4rem;
+    min-height: 600px;
+    color: var();
+}
+
+.host .btn {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.host .btn h3 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.host .btn .code-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.host .btn label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.host .btn button {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: .7rem 0;
+}
+.host .error{
+    padding-bottom: 1rem;
+    color: red;
+}
+
+.host .btn button a {
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: .4rem .7rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+/* ------------------------- */
+::-webkit-calendar-picker-indicator {
+    filter: none;
+}
+
+.searchBydate form {
+    text-align: end;
+}
+
+.searchBydate form input {
+    border: 1px solid var(--color-secondary);
+    margin: .3rem 0;
+}
+
+/* ------------------------- */
+
+.host .add-vehicle form {
+    padding: 2rem;
+    background-color: var(--color-grey1);
+    margin: 2rem 0;
+}
+
+.cancel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}.cancel form button{
+    cursor: pointer;
+    border: none;
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+}
+
+.host .add-vehicle form .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.host form input::placeholder{
+    color: var(--color-white);
+}
+.host .add-vehicle form .heading h4 {
+    font-size: 1.3rem;
+}
+
+.host .add-vehicle form .heading .code {
+    font-size: .9rem;
+    color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.host .add-vehicle form .heading .code div {
+    margin: .3rem 0;
+}
+.host .add-vehicle form .heading .code label{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.host .add-vehicle form .heading .code input {
+    padding: .1rem 1rem;
+    width: 200px    ;
+    background-color: var(--color-white);
+    font-size: 1rem;
+    color: var(--color-secondary);
+}
+
+.host .add-vehicle form .form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.host .add-vehicle form .form .form-data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.host .add-vehicle form .form .form-data label {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.host .add-vehicle form .form .form-data select,
+input,
+textarea {
+    padding: .7rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    font-size: 1rem;
+    border: 1px solid var(--color-white);
+}
+
+.host .add-vehicle form .form .form-data input::placeholder,
+textarea::placeholder {
+    color: var(--color-secondary);
+}
+
+.host .add-vehicle form .form .form-data select:focus,
+input:focus,
+textarea:focus {
+    border: 1px solid var(--color-secondary);
+    caret-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-white);
+}
+
+.host .add-vehicle form .form .images {
+    width: 100%;
+}
+
+.host .add-vehicle form .form .time input[type="time"]::-webkit-inner-spin-button {
+    color: var(--color-secondary);
+}
+
+
+/* ////////////////////// */
+.host table {
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.host table tbody {
+    border: none;
+}
+
+.host table tbody tr {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.host table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.host table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.host table tbody tr th {
+    border-top: none;
+}
+
+.host table tbody tr th:first-child {
+    border-left: none;
+}
+
+.host table tbody tr th:last-child {
+    border-right: none;
+}
+
+.host table tbody tr td {
+    border-top: none;
+}
+
+.host table tbody tr td:first-child {
+    border-left: none;
+}
+
+.host table tbody tr td:last-child {
+    border-right: none;
+}
+
+.host tr,
+tr,
+th,
+td {
+    border: 2px solid var(--color-secondary);
+    border-collapse: collapse;
+    padding: 10px;
+    color: var(--color-grey3);
+}
+
+/* ////////////////////////// */
+
+.host .add-vehicle form .form .images {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5px;
+
+}
+
+.host .add-vehicle form .form .images .upfile {
+    width: 100%;
+    height: auto;
+    height: 120px;
+    border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.host .add-vehicle form .form .images .upfile img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.host .add-vehicle form .form .img-heading {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.host .add-vehicle form .form .img-heading span {
+    color: red;
+    font-weight: lighter;
+}
+
+.host .add-vehicle form .form .images .upfile input {
+    width: 100%;
+    padding: 0;
+}
+
+.host .add-vehicle form .form .images .upfile input[type='file'] {
+    display: none;
+}
+
+/* -------------- */
+
+.hostRedirect {
+    padding: 3rem;
+}
+
+/* -----------------/ */
+
+input[type=time] {
+    border: none;
+    color: #2a2c2d;
+    font-size: 14px;
+    font-family: helvetica;
+}
+
+/* Wrapper around the hour, minute, second, and am/pm fields as well as 
+  the up and down buttons and the 'X' button */
+input[type=time]::-webkit-datetime-edit-fields-wrapper {
+    display: flex;
+}
+
+/* The space between the fields - between hour and minute, the minute and 
+  second, second and am/pm */
+input[type=time]::-webkit-datetime-edit-text {
+    padding: 19px 4px;
+}
+
+/* The naming convention for the hour, minute, second, and am/pm field is
+  `-webkit-datetime-edit-{field}-field` */
+
+/* Hour */
+input[type=time]::-webkit-datetime-edit-hour-field {
+    border-radius: 15%;
+    padding: .3rem 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Minute */
+input[type=time]::-webkit-datetime-edit-minute-field {
+    border-radius: 15%;
+    padding: .3rem 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* AM/PM */
+input[type=time]::-webkit-datetime-edit-ampm-field {
+    border-radius: 15%;
+    padding: 19px 13px;
+}
+
+/* 'X' button for resetting/clearing time */
+input[type=time]::-webkit-clear-button {
+    display: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+    font-size: 2rem;
+}
